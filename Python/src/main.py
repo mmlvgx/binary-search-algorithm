@@ -26,5 +26,5 @@ list__ = ['a', 'b', 'c', 'x', 'y', 'z']
 
 element = find(list__, 'c', 0, 6)
 
-print(element)
+print(f'Result: {element}')
 # >>> 2
