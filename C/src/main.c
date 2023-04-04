@@ -1,10 +1,7 @@
-#include <iostream>
+#include <stdio.h>
 #include <math.h>
 
-using std::string;
-
-
-int search(string array[], string target, int start, int end)
+int search(char* array[], char* target, int start, int end)
 {
     if (start > end) {
         // Not Found
@@ -29,11 +26,9 @@ int search(string array[], string target, int start, int end)
 
 int main()
 {
-    string array[6] = {"a", "b", "c", "x", "y", "z"};
+    char* array[6] = {"a", "b", "c", "x", "y", "z"};
 
     int element = search(array, "c", 0, 6);
 
-    std::cout << "Result: " << element;
-
-    return 0;
+    printf("Result: %i", element);
 }
